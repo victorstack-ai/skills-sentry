@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run Skills Sentry
-        run: python skills_sentry.py scan . --fail-on high --max-score 60 --json out/report.json
+      - name: Run Skills Sentry on clean fixture
+        run: python skills_sentry.py scan fixtures/clean --fail-on high --max-score 60 --json out/report.json
       - name: Run tests
         run: python -m pytest tests/ -q

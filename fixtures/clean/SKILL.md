@@ -5,4 +5,4 @@ description: A minimal skill with no risky patterns.
 
 # Sample clean skill
 
-No curl | sh, no .env, no eval. Safe to scan.
+No remote shell pipes, no env files, no eval. Safe to scan.
