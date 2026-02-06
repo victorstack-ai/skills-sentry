@@ -1,0 +1,16 @@
+---
+description: No AI assistant or Cursor mention in commits — ever.
+alwaysApply: true
+---
+
+# Commits: NO AI assistant attribution — policy
+
+**We do not want any commit that mentions any AI assistant.**
+
+When creating or suggesting git commits in this repo:
+
+1. **Never include** `Co-authored-by: Cursor <cursoragent@cursor.com>` or any Co-authored-by/trailer that mentions Cursor, cursoragent, an AI, or an agent. Remove it before committing if the IDE adds it.
+2. **Never include** any Cursor mention or AI/agent attribution in the subject or body. No "Cursor", "AI agent", "cursoragent", "assistant", or similar.
+3. Use **neutral, descriptive** commit messages only (e.g. "Add ENV_SECRETS rule", "Fix zip unpack path").
+
+Strip Co-authored-by trailers and any AI/assistant mention before every commit.
