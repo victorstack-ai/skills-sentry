@@ -1,16 +1,16 @@
 ---
-description: No AI assistant or Cursor mention in commits — ever.
+description: No AI assistant or Cursor mention in commits — ever. Applies to this project.
 alwaysApply: true
 ---
 
 # Commits: NO AI assistant attribution — policy
 
-**We do not want any commit that mentions any AI assistant.**
+**We do not want any commit that mentions any AI assistant.** This applies to this repo and any repo you touch.
 
-When creating or suggesting git commits in this repo:
+When creating or suggesting git commits in this project:
 
 1. **Never include** `Co-authored-by: Cursor <cursoragent@cursor.com>` or any Co-authored-by/trailer that mentions Cursor, cursoragent, an AI, or an agent. Remove it before committing if the IDE adds it.
 2. **Never include** any Cursor mention or AI/agent attribution in the subject or body. No "Cursor", "AI agent", "cursoragent", "assistant", or similar.
-3. Use **neutral, descriptive** commit messages only (e.g. "Add ENV_SECRETS rule", "Fix zip unpack path").
+3. Use **neutral, descriptive** commit messages only.
 
-Strip Co-authored-by trailers and any AI/assistant mention before every commit.
+**Enforcement:** Use the prepare-commit-msg hook. Copy from `~/.cursor/git-hooks/prepare-commit-msg` into this repo: `cp ~/.cursor/git-hooks/prepare-commit-msg .git/hooks/ && chmod +x .git/hooks/prepare-commit-msg`. Or set `git config core.hooksPath ~/.cursor/git-hooks` from this repo root.
